@@ -108,7 +108,7 @@ module.exports = app => {
 	// 登录校验中间件
   const authMiddleware = require('../../middleware/auth')
   const resourceMiddleware = require('../../middleware/resource')
-	app.use('/admin/api/rest/:resource', authMiddleware(), resourceMiddleware(), router)
+	app.use('/moba/admin/api/rest/:resource', authMiddleware(), resourceMiddleware(), router)
 	
 	//图片上传
 	const multer = require('multer')

@@ -140,5 +140,5 @@ module.exports = app => {
 			.lean()
 		res.send(data)
 	})
-	app.use('/web/api', router)
+	app.use('moba/web/api', router)
 }
